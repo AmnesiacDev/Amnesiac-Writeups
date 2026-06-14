@@ -418,13 +418,13 @@ kali@kali $ ssh -i sshkey.private bandit26@bandit.labs.overthewire.org -p 2220
 # From vim type **:set shell=/bin/bash**
 # Then type **:shell** to open new shell
 bandit26 ~$ cat /etc/bandit_pass/bandit26
-***password for bandit 26***
+_password for bandit 26_
 
 bandit26 ~$ ls
 bandit27-do
 
 bandit26 ~$ ./bandit27-do cat /etc/bandit_pass/bandit27
-***password for bandit 27***
+**password for bandit 27**
 ```
 
 ## level 27
