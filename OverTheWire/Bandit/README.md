@@ -4,18 +4,19 @@
 Here I will show and explain how to solve each level in detail
 ## Table of contents
 
-|  Levels 0 - 9  | Writeup  |  Levels 10 - 19  | Writeup |
+|  Levels 0 - 10  | Writeup  |  Levels 11 - 21  | Writeup |
 | ------------- |------------- | ------------- |------------- |
-|  0 -> 1  |  [Level 0](#Level-0)  |  10 -> 11  |  [Level 10](#Level-10)  |
-|  1 -> 2  |  [Level 1](#Level-1)  |  11 -> 12  | [Level 11](#Level-11)   |
-|  2 -> 3  |  [Level 2](#Level-2)  |  12 -> 13  |  [Level 12](#Level-12)  |
-|  3 -> 4  |  [Level 3](#Level-3)  |  13 -> 14  |  [Level 13](#Level-13)  |
-|  4 -> 5  |  [Level 4](#Level-4)  |  14 -> 15  |  [Level 14](#Level-14)  |
-|  5 -> 6  |  [Level 5](#Level-5)  |  15 -> 16  |  [Level 15](#Level-15)  |
-|  6 -> 7  |  [Level 6](#Level-6)  |  16 -> 17  |  [Level 16](#Level-16)  |
-|  7 -> 8  |  [Level 7](#Level-7)  |  17 -> 18  |  [Level 17](#Level-17)  |
-|  8 -> 9  |  [Level 8](#Level-8)  |  18 -> 19  |  [Level 18](#Level-18)  |
-|  9 -> 10 |  [Level 9](#Level-9)  |  19 -> 20  |  [Level 19](#Level-19)  |
+|  0 -> 1  |  [Level 0](#Level-0)  |  11 -> 12  |  [Level 11](#Level-11)  |
+|  1 -> 2  |  [Level 1](#Level-1)  |  12 -> 13  |  [Level 12](#Level-12)  |
+|  2 -> 3  |  [Level 2](#Level-2)  |  13 -> 14  |  [Level 13](#Level-13)  |
+|  3 -> 4  |  [Level 3](#Level-3)  |  14 -> 15  |  [Level 14](#Level-14)  |
+|  4 -> 5  |  [Level 4](#Level-4)  |  15 -> 16  |  [Level 15](#Level-15)  |
+|  5 -> 6  |  [Level 5](#Level-5)  |  16 -> 17  |  [Level 16](#Level-16)  |
+|  6 -> 7  |  [Level 6](#Level-6)  |  17 -> 18  |  [Level 17](#Level-17)  |
+|  7 -> 8  |  [Level 7](#Level-7)  |  18 -> 19  |  [Level 18](#Level-18)  |
+|  8 -> 9  |  [Level 8](#Level-8)  |  19 -> 20  |  [Level 19](#Level-19)  |
+|  9 -> 10 |  [Level 9](#Level-9)  |  20 -> 21  |  [Level 20](#Level-20)  |
+|  10 -> 11  |  [Level 10](#Level-10)  |  21 -> 22  |  [Level 21](#Level-21)  |
 
 
 
