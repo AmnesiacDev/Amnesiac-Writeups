@@ -240,3 +240,82 @@ Port: 31790 Correct!
 ```
 
 ## level 17
+
+```bash
+```
+
+## level 18
+
+```bash
+```
+
+## level 19
+
+```bash
+```
+## level 20
+
+```bash
+```
+
+## level 21
+
+```bash
+```
+
+## level 22
+
+```bash
+```
+
+## level 23
+
+```bash
+```
+
+## level 24
+
+```bash
+```
+
+## level 25
+
+```bash
+```
+
+## level 26
+
+```bash
+```
+
+## level 27
+
+```bash
+```
+
+## level 28
+
+```bash
+```
+
+## level 29
+
+```bash
+```
+
+## level 30
+
+```bash
+```
+
+## level 31
+
+```bash
+```
+
+## level 32
+
+```bash
+```
+
+# THE END
