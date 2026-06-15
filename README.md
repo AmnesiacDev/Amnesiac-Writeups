@@ -14,4 +14,4 @@
 
 |  Challenges  |   |
 | ------------- |------------- |
-| Bandit  |  |
+| [Bandit](https://github.com/AmnesiacDev/Amnesiac-Writeups/tree/main/OverTheWire/Bandit)  |  |
