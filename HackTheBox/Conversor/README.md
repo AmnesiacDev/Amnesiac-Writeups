@@ -27,11 +27,11 @@ Service Info: Host: conversor.htb; OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
 We have the usual ports, lets go to 10.10.11.92:80 and see what we have
 > Don't forget to add conversor.htb to your /etc/hosts
-![login](https://github.com/AmnesiacDev/HackTheBox-Writeups/blob/main/Conversor/images/login.png)
+![login](https://github.com/AmnesiacDev/HackTheBox-Writeups/blob/main/HackTheBox/Conversor/images/login.png)
 
 Lets register with an account and see whats inside
 
-![dashboard](https://github.com/AmnesiacDev/HackTheBox-Writeups/blob/main/Conversor/images/dashboard.png)
+![dashboard](https://github.com/AmnesiacDev/HackTheBox-Writeups/blob/main/HackTheBox/Conversor/images/dashboard.png)
 
 Okay we have an XML and XSLT uploads then they process into an HTML page, but we see something interesting in the "About" tab
 
@@ -39,7 +39,7 @@ Okay we have an XML and XSLT uploads then they process into an HTML page, but we
 
 In the source code there is1 main thing that is interesting here, in the "install md" file:
 
-![Install](https://github.com/AmnesiacDev/HackTheBox-Writeups/blob/main/Conversor/images/installmd.png)
+![Install](https://github.com/AmnesiacDev/HackTheBox-Writeups/blob/main/HackTheBox/Conversor/images/installmd.png)
 
 From this we can understand that putting a python file in "scripts" directory, the **www-data** user will run it automatically
 
@@ -160,7 +160,7 @@ print("[+] File received successfully!")
 ```
 We're able to view the database now 
 
-![user_in_db](https://github.com/AmnesiacDev/HackTheBox-Writeups/blob/main/Conversor/images/user_in_db.png)
+![user_in_db](https://github.com/AmnesiacDev/HackTheBox-Writeups/blob/main/HackTheBox/Conversor/images/user_in_db.png)
 
 If we use an MD5 decryptor we get the password: <details>
   <summary>Click to reveal password</summary> Keepmesafeandwarm </details>
