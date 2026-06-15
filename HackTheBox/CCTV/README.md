@@ -11,9 +11,9 @@ Lets add to our DNS and go to the http website
 
 Clicking the "Staff Login" Button takes us to a ZoneMinder CMS login page, randomly trying "admin" for both username and password surprisingly works for default credintials
 
-![Login](https://github.com/AmnesiacDev/HackTheBox-Writeups/blob/main/CCTV/Images/adminLogin.png)
+![Login](https://github.com/AmnesiacDev/HackTheBox-Writeups/blob/main/HackTheBox/CCTV/Images/adminLogin.png)
 
-![console](https://github.com/AmnesiacDev/HackTheBox-Writeups/blob/main/CCTV/Images/Console.png)
+![console](https://github.com/AmnesiacDev/HackTheBox-Writeups/blob/main/HackTheBox/CCTV/Images/Console.png)
 
 First thing I noticed is the version **1.37.63** doing some small google searches I found this exploit for this version of ZoneMinder
 
