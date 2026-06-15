@@ -7,7 +7,7 @@ Lets add to our DNS and go to the http website
 ~HTB/CCTV:$ sudo echo "10.129.5.231 cctv.htb" >> /etc/hosts
 ```
 
-![MainPage](https://github.com/AmnesiacDev/HackTheBox-Writeups/blob/main/CCTV/Images/MainPage.png)
+![MainPage](https://github.com/AmnesiacDev/HackTheBox-Writeups/blob/main/HackTheBox/CCTV/Images/MainPage.png)
 
 Clicking the "Staff Login" Button takes us to a ZoneMinder CMS login page, randomly trying "admin" for both username and password surprisingly works for default credintials
 
