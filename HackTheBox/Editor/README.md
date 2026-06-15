@@ -6,7 +6,7 @@ Here I will share how I was able to solve the Editor machine which is an easy di
 We're first provided with this IP 10.10.11.80 so I run an nmap 
 
 
-![nmap scan](https://github.com/AmnesiacDev/HackTheBox-Writeups/blob/main/Editor/images/nmap-result-screenshot.png)
+![nmap scan](https://github.com/AmnesiacDev/HackTheBox-Writeups/blob/main/HackTheBox/Editor/images/nmap-result-screenshot.png)
 
 We can see an interesting http port 8080, so we go to 10.10.11.80:8080 and we get to this website page
 
@@ -14,7 +14,7 @@ We can see an interesting http port 8080, so we go to 10.10.11.80:8080 and we ge
 
 if we scroll to the bottom we can see the version that was used
 
-![xwiki_version](https://github.com/AmnesiacDev/HackTheBox-Writeups/blob/main/Editor/images/xwiki_website.png)
+![xwiki_version](https://github.com/AmnesiacDev/HackTheBox-Writeups/blob/main/HackTheBox/Editor/images/xwiki_website.png)
 
 After doing a bit of searching I found this vulnrability which works on this exact version of xwiki [CVE-2025-24893](https://github.com/D3Ext/CVE-2025-24893)
 
@@ -29,7 +29,7 @@ nesc101@Nesc:~$  nc -lvnp 1337         #listen on port 1337
 
 and boom we get reverse shell
 
-![reverse shell](https://github.com/AmnesiacDev/HackTheBox-Writeups/blob/main/Editor/images/reverse_shell.png)
+![reverse shell](https://github.com/AmnesiacDev/HackTheBox-Writeups/blob/main/HackTheBox/Editor/images/reverse_shell.png)
 
 After doing some digging I run this 
 
@@ -39,7 +39,7 @@ $     grep -Rn "password" .          # search all files in all folders for "pass
 
 I found an interesting password
 
-![password](https://github.com/AmnesiacDev/HackTheBox-Writeups/blob/main/Editor/images/password_found.png)
+![password](https://github.com/AmnesiacDev/HackTheBox-Writeups/blob/main/HackTheBox/Editor/images/password_found.png)
 
 To find the user who this password belongs to I run this 
 
@@ -56,7 +56,7 @@ $     ssh oliver@10.10.11.80         #Connect using the password we obtained
 
 And here we find our first flag in user.txt
 
-![flag-1](https://github.com/AmnesiacDev/HackTheBox-Writeups/blob/main/Editor/images/first_flag.png)
+![flag-1](https://github.com/AmnesiacDev/HackTheBox-Writeups/blob/main/HackTheBox/Editor/images/first_flag.png)
 
 But we're not done yet, we still are missing the root flag!
 We already know that user **oliver** is in group **netdata** and after some enumeration we can do check out ndsudo
