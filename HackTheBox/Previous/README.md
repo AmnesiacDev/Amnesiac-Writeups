@@ -21,11 +21,11 @@ Lets add to our DNS and go to the http website
 ~HTB/Previous:$ sudo echo "10.10.11.83 previous.htb ftp.previous.htb" >> /etc/hosts
 ```
 
-![index Page](https://github.com/AmnesiacDev/HackTheBox-Writeups/blob/main/Previous/images/main_page.png)
+![index Page](https://github.com/AmnesiacDev/HackTheBox-Writeups/blob/main/HackTheBox/Previous/images/main_page.png)
 
 Whenever we click on docs or getting started we get redirected into sign-in screen
 
-![Signin](https://github.com/AmnesiacDev/HackTheBox-Writeups/blob/main/Previous/images/login.png)
+![Signin](https://github.com/AmnesiacDev/HackTheBox-Writeups/blob/main/HackTheBox/Previous/images/login.png)
 
 After doing a bit of research I came across this exploit [(CVE-2025-29927) Middleware bypass](https://github.com/kOaDT/poc-cve-2025-29927/blob/main/middleware.ts)
 
@@ -57,32 +57,32 @@ Connection: keep-alive
 ```
 
 We now get this in our Burp Suite and we open it in browser
-![BurpDocs](https://github.com/AmnesiacDev/HackTheBox-Writeups/blob/main/Previous/images/burp_docs.png)
+![BurpDocs](https://github.com/AmnesiacDev/HackTheBox-Writeups/blob/main/HackTheBox/Previous/images/burp_docs.png)
 
-![Browser Docs](https://github.com/AmnesiacDev/HackTheBox-Writeups/blob/main/Previous/images/docs.png)
+![Browser Docs](https://github.com/AmnesiacDev/HackTheBox-Writeups/blob/main/HackTheBox/Previous/images/docs.png)
 
 Lets go to /docs/examples
 
-![examples](https://github.com/AmnesiacDev/HackTheBox-Writeups/blob/main/Previous/images/examples_download.png)
+![examples](https://github.com/AmnesiacDev/HackTheBox-Writeups/blob/main/HackTheBox/Previous/images/examples_download.png)
 
 Here we can see that we get redirected to /api/download?example=<example name>, this could be our way in using LFI (Local file Inclusion)
 
-![download](https://github.com/AmnesiacDev/HackTheBox-Writeups/blob/main/Previous/images/download.png)
+![download](https://github.com/AmnesiacDev/HackTheBox-Writeups/blob/main/HackTheBox/Previous/images/download.png)
 
-![/etc/passwd](https://github.com/AmnesiacDev/HackTheBox-Writeups/blob/main/Previous/images/etcpasswd.png)
+![/etc/passwd](https://github.com/AmnesiacDev/HackTheBox-Writeups/blob/main/HackTheBox/Previous/images/etcpasswd.png)
 
 Okay this is where the fun starts.
 After reading the docs for [Next.JS](https://nextjs.org/docs) specifically file structure, I discovered that we need to search in the /.next directory, most interestingly -> ```/.next``` ```/build-manifest.json``` and ```/server/pages-manifest.json```
 
-![page manifest](https://github.com/AmnesiacDev/HackTheBox-Writeups/blob/main/Previous/images/page_manifest.png)
+![page manifest](https://github.com/AmnesiacDev/HackTheBox-Writeups/blob/main/HackTheBox/Previous/images/page_manifest.png)
 
 I didn't find anything interesting in ```_app```, ```docs```, ```signin```, however in ```api``` we see ```api/auth/[...nextauth].js```, lets see what's written inside
 
-![api_auth](https://github.com/AmnesiacDev/HackTheBox-Writeups/blob/main/Previous/images/api_auth.png)
+![api_auth](https://github.com/AmnesiacDev/HackTheBox-Writeups/blob/main/HackTheBox/Previous/images/api_auth.png)
 
 Lets make this more readable
 
-![user&pass](https://github.com/AmnesiacDev/HackTheBox-Writeups/blob/main/Previous/images/user%26pass.png)
+![user&pass](https://github.com/AmnesiacDev/HackTheBox-Writeups/blob/main/HackTheBox/Previous/images/user%26pass.png)
 
 Just like that we have a username and password to use
 
