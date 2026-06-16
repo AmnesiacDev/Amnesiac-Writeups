@@ -1,7 +1,7 @@
 # OverTheWire Natas Writeup
 
 
-|  Levels 0 - 10  | Writeup  |  Levels 11 - 21  | Writeup |  Levels 22 - 32  | Writeup |
+|  Levels 0 - 10  | Writeup  |  Levels 11 - 21  | Writeup |  Levels 22 - 33  | Writeup |
 | ------------- |------------- | ------------- |------------- | ------------- |------------- |
 |  0 -> 1  |  [Level 0](#Level-0)  |  11 -> 12  |  [Level 11](#Level-11)  |  22 -> 23  |  [Level 22](#Level-22)  |
 |  1 -> 2  |  [Level 1](#Level-1)  |  12 -> 13  |  [Level 12](#Level-12)  |  23 -> 24  |  [Level 23](#Level-23)  |
@@ -15,3 +15,6 @@
 |  9 -> 10 |  [Level 9](#Level-9)  |  20 -> 21  |  [Level 20](#Level-20)  |  31 -> 32  |  [Level 31](#Level-31)  |
 |  10 -> 11  |  [Level 10](#Level-10)  |  21 -> 22  |  [Level 21](#Level-21)  |  32 -> 33  |  [Level 32](#Level-32)  |
 |  |  |  |  |  33  |  [level 33](#Level-33)|
+
+
+## Level 0
