@@ -3,14 +3,14 @@
 ```
 ~$ nmap -sV 192.168.17.135 //IP of academy machine
 ```
-![[Pasted image 20260722174445.png]]
+![[Attachments/Pasted image 20260722174445.png]]
 
 Here we can see an FTP server and an apache web server, lets check if the FTP server accepts anonymous default credentials
 
-![[Pasted image 20260722174710.png]]
+![[Attachments/Pasted image 20260722174710.png]]
 Indeed we login as anonymous and find "note.txt" file which contains the following
 
-![[Pasted image 20260722174753.png]]
+![[Attachments/Pasted image 20260722174753.png]]
 
 We find credentials for StudentRegNo and a hashed password, to dehash the password we store it in hash.md file and crack it using johntheripper with md5 format
 
@@ -21,7 +21,7 @@ cd73502828457d15655bbd7a63fb0bc8:student
 
 Lets check the apache webserver 
 
-![[Pasted image 20260722175713.png]]
+![[Attachments/Pasted image 20260722175713.png]]
 
 ```
 ~$ gobuster dir -u http://192.168.17.135 -w /usr/share/wordlists/dirb/big.txt
@@ -53,7 +53,7 @@ Very interesting results lets use the creds we collected to login to /academy
 
 A very interesting result could be found at /academy/my-profile.php, can you spot it?
 
-![[Pasted image 20260722180237.png]]
+![[Attachments/Pasted image 20260722180237.png]]
 
 The ability to upload an image could be vulnerable to a File upload exploit
 
@@ -63,7 +63,7 @@ The ability to upload an image could be vulnerable to a File upload exploit
 
 now lets upload our not-suspicious payload and see if it works
 
-![[Pasted image 20260722180606.png]]
+![[Attachments/Pasted image 20260722180606.png]]
 
 Perfect, now lets create a reverse shell
 
@@ -79,11 +79,11 @@ uid=33(www-data) gid=33(www-data) groups=33(www-data)
 
 Now that we obtained reverse shell we need to attempt to escalate our privilege, some important data is found at /var/www/html/academy/includes/config.php
 
-![[Pasted image 20260722181409.png]]
+![[Attachments/Pasted image 20260722181409.png]]
 
 Here we found mysql username and password, but lets attempt to login using ssh with these credentials 
 
-![[Pasted image 20260722181549.png]]
+![[Attachments/Pasted image 20260722181549.png]]
 
 Our first escalation to a higher priv user, now we need to escalate to a root user.
 
@@ -113,10 +113,10 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
 A file named backup.sh is being run every minute as root, can we edit it perhaps?
 
-![[Pasted image 20260722181918.png]]
+![[Attachments/Pasted image 20260722181918.png]]
 Indeed we can, we added this line to the file to open a reverse shell as root
 
-![[Pasted image 20260722182042.png]]
+![[Attachments/Pasted image 20260722182042.png]]
 
 And just like that we were able to obtain root privilege and access flag.txt
 
