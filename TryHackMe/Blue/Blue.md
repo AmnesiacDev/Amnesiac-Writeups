@@ -2,7 +2,7 @@
 
 #### Q1) Scan the machine. (If you are unsure how to tackle this, I recommend checking out the [Nmap](https://tryhackme.com/room/furthernmap) room)
 
-![image-1](Screenshot 2026-07-22 213520.png)
+![image-1](https://github.com/AmnesiacDev/Amnesiac-Writeups/blob/main/TryHackMe/Blue/Screenshot%202026-07-22%20213520.png)
 
 ### Q2) How many ports are open with a port number under 1000?
 ##### Answer: 3
@@ -84,7 +84,7 @@ msfconsole> set SESSION 1
 
 ### Q7) See processes with 'ps' and migrate to last process
 
-![[Screenshot 2026-07-22 21403qweq9.png]]
+![image-2](https://github.com/AmnesiacDev/Amnesiac-Writeups/blob/main/TryHackMe/Blue/Screenshot%202026-07-22%2021403qweq9.png)
 
 ```bash
 meterpreter> migrate 3052
@@ -94,12 +94,12 @@ meterpreter> migrate 3052
 
 ### Q1) What is the name of the non-default user?
 
-![[Pasted image 20260722220856.png]]
+![image-3](https://github.com/AmnesiacDev/Amnesiac-Writeups/blob/main/TryHackMe/Blue/Pasted%20image%2020260722220856.png)
 ##### Name is Jon
 
 ### Q2) Copy this password hash to a file and research how to crack it. What is the cracked password?
 
-![[Screenshot 2026-07-22 214257.png]]
+![image-4](https://github.com/AmnesiacDev/Amnesiac-Writeups/blob/main/TryHackMe/Blue/Screenshot%202026-07-22%20214257.png)
 
 ## Find Flags
 
