@@ -2,7 +2,7 @@
 
 #### Q1) Scan the machine. (If you are unsure how to tackle this, I recommend checking out the [Nmap](https://tryhackme.com/room/furthernmap) room)
 
-![[Screenshot 2026-07-22 213520.png]]
+!(Screenshot 2026-07-22 213520.png)
 
 ### Q2) How many ports are open with a port number under 1000?
 ##### Answer: 3
