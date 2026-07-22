@@ -2,7 +2,7 @@
 
 ## Recon
 
-#### Q1) Scan the machine. (If you are unsure how to tackle this, I recommend checking out the [Nmap](https://tryhackme.com/room/furthernmap) room)
+#### Q1) Scan the machine
 
 ![image-1](https://github.com/AmnesiacDev/Amnesiac-Writeups/blob/main/TryHackMe/Blue/Screenshot%202026-07-22%20213520.png)
 
