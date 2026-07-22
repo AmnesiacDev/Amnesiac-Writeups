@@ -3,7 +3,7 @@
 ```
 ~$ nmap -sV 192.168.17.135 //IP of academy machine
 ```
-![Image-1](./Attachments/Pasted image 20260722174445.png)
+![Image-1](https://github.com/AmnesiacDev/Amnesiac-Writeups/blob/main/HackTheBox/Academy/Attachments/Pasted%20image%2020260722174445.png)
 
 Here we can see an FTP server and an apache web server, lets check if the FTP server accepts anonymous default credentials
 
