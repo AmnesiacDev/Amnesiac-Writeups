@@ -1,3 +1,5 @@
+# Writeup for Academy machine from [HackTheBox](https://app.hackthebox.com/home)
+
 ### Enumeration
 
 ```bash
