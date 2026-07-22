@@ -1,3 +1,5 @@
+# Blue Machine from [TryHackMe](https://tryhackme.com/room/blue) Writeup
+
 ## Recon
 
 #### Q1) Scan the machine. (If you are unsure how to tackle this, I recommend checking out the [Nmap](https://tryhackme.com/room/furthernmap) room)
