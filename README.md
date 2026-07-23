@@ -9,6 +9,7 @@
 |  [Editor](https://github.com/AmnesiacDev/Amnesiac-Writeups/tree/main/HackTheBox/Editor)  |
 |  [Expressway](https://github.com/AmnesiacDev/Amnesiac-Writeups/tree/main/HackTheBox/Expressway)  |
 |  [Previous](https://github.com/AmnesiacDev/Amnesiac-Writeups/tree/main/HackTheBox/Previous)  |
+|  [Academy](https://github.com/AmnesiacDev/Amnesiac-Writeups/tree/main/HackTheBox/Academy)  |
 
 ## OverTheWire
 
